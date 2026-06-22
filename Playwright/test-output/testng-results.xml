@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-17T09:52:05 BRT" name="Default suite" finished-at="2026-06-17T09:52:24 BRT" duration-ms="19758">
+  <suite started-at="2026-06-22T15:43:08 BRT" name="Default suite" finished-at="2026-06-22T15:43:22 BRT" duration-ms="14760">
     <groups>
     </groups>
-    <test started-at="2026-06-17T09:52:05 BRT" name="Default test" finished-at="2026-06-17T09:52:24 BRT" duration-ms="19758">
-      <class name="tests.Logar">
-        <test-method signature="realizarlogin()[pri:0, instance:tests.Logar@46cdf8bd]" started-at="2026-06-17T09:52:05 BRT" name="realizarlogin" finished-at="2026-06-17T09:52:24 BRT" duration-ms="19733" status="PASS">
+    <test started-at="2026-06-22T15:43:08 BRT" name="Default test" finished-at="2026-06-22T15:43:22 BRT" duration-ms="14760">
+      <class name="tests.FirstTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.FirstTest@78e4deb0]" started-at="2026-06-22T15:43:08 BRT" name="setUp" finished-at="2026-06-22T15:43:13 BRT" duration-ms="5813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FirstTest.openWay2AutomationAndMemberLogin()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- realizarlogin -->
-      </class> <!-- tests.Logar -->
+        </test-method> <!-- setUp -->
+        <test-method signature="openWay2AutomationAndMemberLogin()[pri:0, instance:tests.FirstTest@78e4deb0]" started-at="2026-06-22T15:43:13 BRT" name="openWay2AutomationAndMemberLogin" finished-at="2026-06-22T15:43:22 BRT" duration-ms="8781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWay2AutomationAndMemberLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FirstTest@78e4deb0]" started-at="2026-06-22T15:43:22 BRT" name="tearDown" finished-at="2026-06-22T15:43:22 BRT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FirstTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,87 @@
+package base;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class BaseTest {
+
+	protected Playwright playwright;
+	protected Browser browser;
+	protected Page page;
+
+	// Directory where screenshots will be saved. Update if needed.
+	protected String screenshotDir = "C:\\Users\\brunello\\Pictures\\screenshot";
+
+	// simple per-test-step counter
+	protected AtomicInteger stepCounter = new AtomicInteger(0);
+
+	@BeforeMethod
+	public void setUp() {
+
+		// make sure screenshot directory exists
+		try {
+			Path dir = Paths.get(screenshotDir);
+			if (!Files.exists(dir)) {
+				Files.createDirectories(dir);
+			}
+		} catch (IOException e) {
+			System.err.println("Could not create screenshot directory: " + e.getMessage());
+		}
+
+		stepCounter.set(0);
+
+		playwright = Playwright.create();
+		browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(3000));
+		page = browser.newPage();
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		if (browser != null)
+			browser.close();
+		if (playwright != null)
+			playwright.close();
+	}
+
+	/**
+	 * Take a screenshot for the current test. File name will include testName, step number and timestamp.
+	 * Any exceptions are caught and logged so tests won't fail because of screenshot issues.
+	 */
+	protected void takeScreenshot(String testName, String stepName) {
+		try {
+			int step = stepCounter.incrementAndGet();
+			String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss_SSS").format(new Date());
+			String fileName = String.format("%s_step%02d_%s_%s.png", sanitize(testName), step, sanitize(stepName), timestamp);
+			Path out = Paths.get(screenshotDir, fileName);
+			// request full page screenshot; if page is null this will throw and be caught
+			page.screenshot(new Page.ScreenshotOptions().setPath(out));
+			System.out.println("Saved screenshot: " + out.toAbsolutePath());
+		} catch (Exception e) {
+			System.err.println("Failed to take screenshot: " + e.getMessage());
+		}
+	}
+
+	/** Convenience helper that uses a generated step name */
+	protected void takeScreenshot(String testName) {
+		takeScreenshot(testName, "step");
+	}
+
+	private String sanitize(String s) {
+		if (s == null) return "null";
+		return s.replaceAll("[\\\\/:*?\"<>|\\s]+", "_").replaceAll("_+", "_").replaceAll("^_+|_+$", "");
+	}
+
+}

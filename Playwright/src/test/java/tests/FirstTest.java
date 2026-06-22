@@ -9,16 +9,21 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 import base.BaseTest;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class FirstTest extends BaseTest {
 
 	@Test
 	public void verifyTitle() {
 		page.navigate("https://google.com");
+		takeScreenshot("verifyTitle", "afterNavigate");
 		if (page.isVisible("button:has-text('Accept all')")) {
 			page.click("button:has-text('Accept all')");
+			takeScreenshot("verifyTitle", "afterAcceptAll");
 		}
 		System.out.println("The page tittle is : " + page.title());
+		takeScreenshot("verifyTitle", "end");
 
 	}
 
@@ -26,9 +31,11 @@ public class FirstTest extends BaseTest {
 	public void openWay2AutomationAndMemberLogin() {
 		// Navigate to the site
 		page.navigate("https://way2automation.com/");
+		takeScreenshot("openWay2AutomationAndMemberLogin", "afterNavigate");
 
 		// Remove/hide the Lifetime Membership popup and any promo overlay that blocks clicks
 		page.evaluate("() => { document.querySelectorAll('#promoFlyer, .flyer-overlay.open, dialog, [role=\"dialog\"]').forEach(e=>{e.style.display='none'; e.setAttribute('aria-hidden','true');}); }");
+		takeScreenshot("openWay2AutomationAndMemberLogin", "afterRemoveOverlays");
 
 		// Click the Member Login link — it opens a new popup/tab. Wait for the popup and switch to it.
 		com.microsoft.playwright.Page loginPage = page.waitForPopup(() -> {
@@ -37,6 +44,15 @@ public class FirstTest extends BaseTest {
 
 		// Wait for the login page to load and print info
 		loginPage.waitForLoadState();
+		// also capture the popup/login page
+		try {
+			String ts = java.time.LocalDateTime.now().toString().replace(':','-');
+			Path out = Paths.get(screenshotDir, "openWay2AutomationAndMemberLogin_loginpage_" + ts + ".png");
+			loginPage.screenshot(new com.microsoft.playwright.Page.ScreenshotOptions().setPath(out));
+			System.out.println("Saved popup screenshot: " + out.toAbsolutePath());
+		} catch (Exception e) {
+			System.err.println("Failed to capture popup screenshot: " + e.getMessage());
+		}
 		System.out.println("Member login URL: " + loginPage.url());
 		System.out.println("Member login title: " + loginPage.title());
 	}
@@ -45,6 +61,7 @@ public class FirstTest extends BaseTest {
 	public void ensureComprarAvailableForKimonoBranco() throws InterruptedException {
 		// Go to the kimonos listing and find the Branco product
 		page.navigate("https://g13bjjstore.com.br/kimonos/c");
+		takeScreenshot("ensureComprarAvailableForKimonoBranco", "afterNavigateListing");
 
 		Object phObj = page.evaluate("() => { const a = Array.from(document.querySelectorAll('a')).find(x=> (x.innerText||x.textContent||'').toLowerCase().includes('kimono g13') && (x.innerText||x.textContent||'').toLowerCase().includes('branco')); return a ? a.href : null; }");
 		String productHref = phObj == null ? null : phObj.toString();
@@ -54,6 +71,7 @@ public class FirstTest extends BaseTest {
 		}
 
 		page.navigate(productHref);
+		takeScreenshot("ensureComprarAvailableForKimonoBranco", "afterNavigateProduct");
 
 		int intervalMs = 2_000; // retry interval
 		boolean available = false;
@@ -63,9 +81,11 @@ public class FirstTest extends BaseTest {
 		while (true) {
 			// hide overlays that may block interaction
 			page.evaluate("() => { document.querySelectorAll('#promoFlyer, .flyer-overlay.open, dialog, [role=\\\"dialog\\\"], .modal, .overlay').forEach(e=>{e.style.display='none'; e.setAttribute('aria-hidden','true');}); }");
+			takeScreenshot("ensureComprarAvailableForKimonoBranco", "afterHideOverlays");
 
 			// attempt to select size A1 if present
 			page.evaluate("() => { const candidates = Array.from(document.querySelectorAll('button, a, label, span, li, option')); for(const n of candidates){ const t=(n.innerText||n.textContent||'').trim(); if(/\\bA1\\b/.test(t)){ try{ n.click(); }catch(e){} break; } } }");
+			takeScreenshot("ensureComprarAvailableForKimonoBranco", "afterSelectA1Attempt");
 			Thread.sleep(10000);
 			// check for COMPRAR presence and visibility
 			try {
@@ -83,6 +103,7 @@ public class FirstTest extends BaseTest {
 			} catch (Exception rex) {
 				// ignore reload errors and continue
 			}
+			takeScreenshot("ensureComprarAvailableForKimonoBranco", "afterReload");
 			Thread.sleep(intervalMs);
 		}
 
