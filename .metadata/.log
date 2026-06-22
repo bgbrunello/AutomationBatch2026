@@ -10000,3 +10000,66 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to generate 
 
 !ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:21.839
 !MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:24.433
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/0a2c234d-1752-43d8-b908-2be7039d5cce
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:27.438
+!MESSAGE [Info]	[fetchChat] Request 131f2d37-db48-4901-83c7-c91e1ffb3fc9 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 3134.294199999422ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:28.174
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Playwright & git push' has no matching auto approve entries
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:28.174
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Playwright & git push' is split into sub-commands: ["cd /d C:\\Users\\brunello\\Desktop\\rotina\\Playwright","git push"]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:28.174
+!MESSAGE [Info]	[AutoApproveService] Extracted shell 'cmd.exe' from run_in_terminal tool description.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:28.174
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:34.420
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/0a2c234d-1752-43d8-b908-2be7039d5cce
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:26:37.116
+!MESSAGE [Info]	[fetchChat] Request 44ce1ac7-87b4-4589-bf0e-7c38ea16a881 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 2825.6332999998704ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:28:11.321
+!MESSAGE [Info]	[roundMetricsTracker] Turn token usage: 323031 prompt, 3766 completion, 273280 cached (cache rate: 84.6%)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:28:11.322
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:28:11.322
+!MESSAGE [Info]	[fetchChat] Request b3105014-ab7d-4ed9-b785-79d83b330c0b at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 749.9543000003323ms
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-06-22 16:28:22.932
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-06-22 16:28:22.935
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-06-22 16:28:23.167
+!MESSAGE [Info] Document is null for editor: KimonoSteps.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-06-22 16:28:23.168
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/brunello/Desktop/rotina/Playwright/src/test/java/steps/KimonoSteps.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:28:57.257
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/09be97f4-443d-4bde-892a-913bb2a25ae4
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:00.920
+!MESSAGE [Info]	[fetchChat] Request 647687ce-6c28-4e49-8cde-9d3c80767f2f at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 3790.197700000368ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:51.712
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:51.712
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Playwright & git add -A & git commit -m "Save workspace changes" || echo No changes to commit & git push' has no matching auto approve entries
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:51.712
+!MESSAGE [Info]	[AutoApproveService] Extracted shell 'cmd.exe' from run_in_terminal tool description.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:51.713
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Playwright & git add -A & git commit -m "Save workspace changes" || echo No changes to commit & git push' is split into sub-commands: ["cd /d C:\\Users\\brunello\\Desktop\\rotina\\Playwright","git add -A","git commit -m \"Save workspace changes\"","echo No changes to commit","git push"]
