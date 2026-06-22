@@ -7,6 +7,8 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.APIRequestContext;
+import com.microsoft.playwright.APIResponse;
 
 import base.BaseTest;
 import java.nio.file.Path;
@@ -22,9 +24,16 @@ public class FirstTest extends BaseTest {
 			page.click("button:has-text('Accept all')");
 			takeScreenshot("verifyTitle", "afterAcceptAll");
 		}
+
 		System.out.println("The page tittle is : " + page.title());
 		takeScreenshot("verifyTitle", "end");
 
+	}
+
+	@Test
+	public void getWeatherWithPlaywrightRequest() {
+		// delegate to API helper
+		API.getWeatherWithPlaywrightRequest(playwright);
 	}
 
 	@Test

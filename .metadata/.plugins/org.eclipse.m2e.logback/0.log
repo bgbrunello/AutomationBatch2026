@@ -2119,3 +2119,28 @@ org.eclipse.core.runtime.CoreException: Launch configuration FielTorcedorAutomat
 2026-06-22 15:39:59,627 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
 2026-06-22 15:39:59,629 [Worker-41: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2026-06-22 15:39:59,631 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
+2026-06-22 15:42:28,507 [Worker-41: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:42:28,508 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
+2026-06-22 15:42:28,509 [Worker-41: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:42:28,510 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
+2026-06-22 15:50:20,252 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 17.0.11+9
+2026-06-22 15:50:20,304 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@29dc1977{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@63610b36{STARTED}}
+2026-06-22 15:50:20,305 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-06-22 15:50:20,333 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@782d19be{HTTP/1.1, (http/1.1)}{127.0.0.1:58214}
+2026-06-22 15:50:20,348 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@2a05e82b{STARTING}[12.0.6,sto=0] @3772559ms
+2026-06-22 15:50:46,765 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:50:46,766 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
+2026-06-22 15:50:46,768 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:50:46,768 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
+2026-06-22 15:51:07,544 [Worker-49: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:51:07,545 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
+2026-06-22 15:51:07,546 [Worker-49: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:51:07,547 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
+2026-06-22 15:51:58,301 [Worker-48: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:51:58,302 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
+2026-06-22 15:51:58,303 [Worker-48: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:51:58,304 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
+2026-06-22 15:52:46,131 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:52:46,132 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\main\resources
+2026-06-22 15:52:46,134 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2026-06-22 15:52:46,135 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\brunello\Desktop\rotina\Playwright\src\test\resources
