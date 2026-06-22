@@ -51,13 +51,27 @@ public class KimonoSteps {
 	@When("I select size A1")
 	public void selectSize() {
 		try {
+			//Thread.sleep(10000);
 			// look for any element that contains the exact token A1 and click it
 			Locator size = page.locator("text=/\\bA1\\b/");
 			if (size.count() > 0) {
 				size.first().click();
+			//	Thread.sleep(10000);
 			}
 		} catch (Exception e) {
 			// ignore if not present
+		}
+	}
+
+	// helper to attempt selecting A1; used on retries after reload
+	private void clickA1IfPresent() {
+		try {
+			// hide overlays that may reappear
+			try { page.evaluate("() => { document.querySelectorAll('#promoFlyer, .flyer-overlay.open, dialog, [role=\\\"dialog\\\"], .modal, .overlay').forEach(e=>{e.style.display='none'; e.setAttribute('aria-hidden','true');}); }"); } catch (Exception ignored) {}
+			// click any candidate element that matches A1 (covers buttons, labels, options)
+			try { page.evaluate("(t) => { const candidates = Array.from(document.querySelectorAll('button, a, label, span, li, option')); for(const n of candidates){ const txt=(n.innerText||n.textContent||'').trim(); if(new RegExp('\\\\b'+t+'\\\\b','i').test(txt)){ try{ n.click(); }catch(e){} break; } } }", "A1"); } catch (Exception ignored) {}
+			try { Thread.sleep(1200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+		} catch (Exception ignored) {
 		}
 	}
 
@@ -68,6 +82,9 @@ public class KimonoSteps {
 		long start = System.currentTimeMillis();
 		boolean visible = false;
 		while (System.currentTimeMillis() - start < timeoutMs) {
+			// attempt to select A1 again in case reload removed previous selection
+			clickA1IfPresent();
+
 			try {
 				Locator comprar = page.locator("text=COMPRAR").first();
 				if (comprar.isVisible()) {
