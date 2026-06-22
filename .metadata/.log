@@ -10063,3 +10063,133 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to generate 
 
 !ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:51.713
 !MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Playwright & git add -A & git commit -m "Save workspace changes" || echo No changes to commit & git push' is split into sub-commands: ["cd /d C:\\Users\\brunello\\Desktop\\rotina\\Playwright","git add -A","git commit -m \"Save workspace changes\"","echo No changes to commit","git push"]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:55.527
+!MESSAGE [Info]	[fetchChat] Request f42f642c-ccc7-44be-87d0-bdd1c1a8c91a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 740.3765000002459ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:55.528
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:58.667
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/09be97f4-443d-4bde-892a-913bb2a25ae4
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:29:59.877
+!MESSAGE [Info]	[fetchChat] Request 20ed1be6-d1e6-4382-91d7-ff00e47db8d1 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 1379.435899999924ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.160
+!MESSAGE [Info]	[roundMetricsTracker] Turn token usage: 115538 prompt, 486 completion, 108544 cached (cache rate: 93.9%)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.160
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.160
+!MESSAGE [Info]	[fetcher] Fallback fetch for <https://dc.services.visualstudio.com/v2/track> succeeded.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.160
+!MESSAGE [Info]	[fetcher] UndiciFetcher failed; switching to HelixFetcher for subsequent requests.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.160
+!MESSAGE [Info]	[fetchChat] Request 95280538-9cc2-4635-a195-d1582dbcde2c at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 671.9687999999151ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 16:30:15.161
+!MESSAGE [Info]	[fetcher] Request to <https://dc.services.visualstudio.com/v2/track> failed, attempting fallback. Error [TypeError]: fetch failed
+    at Object.processResponse (C:\snapshot\cls-source\dist\main.js:348:32902)
+    at C:\snapshot\cls-source\dist\main.js:348:39247
+    at node:internal/process/task_queues:149:7
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at AsyncResource.runMicrotask (node:internal/process/task_queues:146:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  code: 'UND_ERR_SOCKET',
+  syscall: undefined,
+  errno: undefined,
+  [cause]: SocketError: HTTP/2: "GOAWAY" frame received with code 0
+      at ClientHttp2Session.onHttp2SessionGoAway (C:\snapshot\cls-source\dist\main.js:259:4264)
+      at ClientHttp2Session.emit (node:events:519:28)
+      at Http2Session.onGoawayData (node:internal/http2/core:739:11) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.0.105',
+      localPort: 59286,
+      remoteAddress: '52.179.73.59',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 79003,
+      bytesRead: 1124
+    }
+  }
+}
+
+!ENTRY org.testng.eclipse 1 0 2026-06-22 16:30:57.793
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\brunello\eclipse\java-2024-03\eclipse\configuration\org.eclipse.osgi\523\0\.cp\lib\testng-remote.jar C:\Users\brunello\Desktop\rotina\Playwright\target\test-classes C:\Users\brunello\Desktop\rotina\Playwright\target\classes C:\Users\brunello\.m2\repository\com\microsoft\playwright\playwright\1.54.0\playwright-1.54.0.jar C:\Users\brunello\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar C:\Users\brunello\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar C:\Users\brunello\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar C:\Users\brunello\.m2\repository\com\microsoft\playwright\driver\1.54.0\driver-1.54.0.jar C:\Users\brunello\.m2\repository\com\microsoft\playwright\driver-bundle\1.54.0\driver-bundle-1.54.0.jar C:\Users\brunello\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar C:\Users\brunello\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar C:\Users\brunello\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar C:\Users\brunello\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions-maven-plugin\2.21.0\versions-maven-plugin-2.21.0.jar C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-api\2.21.0\versions-api-2.21.0.jar C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-model\2.21.0\versions-model-2.21.0.jar C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-model-report\2.21.0\versions-model-report-2.21.0.jar C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-common\2.21.0\versions-common-2.21.0.jar C:\Users\brunello\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-xml\3.0.1\plexus-xml-3.0.1.jar C:\Users\brunello\.m2\repository\org\apache\maven\wagon\wagon-provider-api\3.5.3\wagon-provider-api-3.5.3.jar C:\Users\brunello\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar C:\Users\brunello\.m2\repository\org\apache\maven\reporting\maven-reporting-api\4.0.0\maven-reporting-api-4.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\4.0.0\maven-reporting-impl-4.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.4.2\maven-shared-utils-3.4.2.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-site-model\2.0.0\doxia-site-model-2.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-integration-tools\2.0.0\doxia-integration-tools-2.0.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.27\plexus-interpolation-1.27.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\2.0.0\doxia-site-renderer-2.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-skin-model\2.0.0\doxia-skin-model-2.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\2.0.0\doxia-module-xhtml5-2.0.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-velocity\2.2.0\plexus-velocity-2.2.0.jar C:\Users\brunello\.m2\repository\org\apache\velocity\velocity-engine-core\2.4\velocity-engine-core-2.4.jar C:\Users\brunello\.m2\repository\org\apache\velocity\tools\velocity-tools-generic\3.1\velocity-tools-generic-3.1.jar C:\Users\brunello\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar C:\Users\brunello\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\brunello\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar C:\Users\brunello\.m2\repository\org\apache\commons\commons-digester3\3.2\commons-digester3-3.2.jar C:\Users\brunello\.m2\repository\com\github\cliftonlabs\json-simple\3.0.2\json-simple-3.0.2.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-apt\2.0.0\doxia-module-apt-2.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-xdoc\2.0.0\doxia-module-xdoc-2.0.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\maven-archiver\3.6.2\maven-archiver-3.6.2.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-archiver\4.9.2\plexus-archiver-4.9.2.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-io\3.4.2\plexus-io-3.4.2.jar C:\Users\brunello\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar C:\Users\brunello\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar C:\Users\brunello\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar C:\Users\brunello\.m2\repository\org\tukaani\xz\1.9\xz-1.9.jar C:\Users\brunello\.m2\repository\com\github\luben\zstd-jni\1.5.5-11\zstd-jni-1.5.5-11.jar C:\Users\brunello\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar C:\Users\brunello\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.9.0.M3\org.eclipse.sisu.plexus-0.9.0.M3.jar C:\Users\brunello\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.9.0.M3\org.eclipse.sisu.inject-0.9.0.M3.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.1.0\plexus-component-annotations-2.1.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-core\2.0.0\doxia-core-2.0.0.jar C:\Users\brunello\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar C:\Users\brunello\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar C:\Users\brunello\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-sink-api\2.0.0\doxia-sink-api-2.0.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-i18n\1.1.0\plexus-i18n-1.1.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.5.1\plexus-interactivity-api-1.5.1.jar C:\Users\brunello\.m2\repository\com\fasterxml\woodstox\woodstox-core\7.1.1\woodstox-core-7.1.1.jar C:\Users\brunello\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.2\stax2-api-4.2.2.jar C:\Users\brunello\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-utils\4.0.2\plexus-utils-4.0.2.jar C:\Users\brunello\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar C:\Users\brunello\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59453 -protocol json -d C:\Users\brunello\Desktop\rotina\Playwright\test-output C:\Users\brunello\AppData\Local\Temp\testng-eclipse-63893625\testng-customsuite.xml
+java -ea -classpath C:\Users\brunello\eclipse\java-2024-03\eclipse\configuration\org.eclipse.osgi\523\0\.cp\lib\testng-remote.jar:C:\Users\brunello\Desktop\rotina\Playwright\target\test-classes:C:\Users\brunello\Desktop\rotina\Playwright\target\classes:C:\Users\brunello\.m2\repository\com\microsoft\playwright\playwright\1.54.0\playwright-1.54.0.jar:C:\Users\brunello\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar:C:\Users\brunello\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar:C:\Users\brunello\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar:C:\Users\brunello\.m2\repository\com\microsoft\playwright\driver\1.54.0\driver-1.54.0.jar:C:\Users\brunello\.m2\repository\com\microsoft\playwright\driver-bundle\1.54.0\driver-bundle-1.54.0.jar:C:\Users\brunello\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar:C:\Users\brunello\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar:C:\Users\brunello\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar:C:\Users\brunello\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar:C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions-maven-plugin\2.21.0\versions-maven-plugin-2.21.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-api\2.21.0\versions-api-2.21.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-model\2.21.0\versions-model-2.21.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-model-report\2.21.0\versions-model-report-2.21.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\mojo\versions\versions-common\2.21.0\versions-common-2.21.0.jar:C:\Users\brunello\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-xml\3.0.1\plexus-xml-3.0.1.jar:C:\Users\brunello\.m2\repository\org\apache\maven\wagon\wagon-provider-api\3.5.3\wagon-provider-api-3.5.3.jar:C:\Users\brunello\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar:C:\Users\brunello\.m2\repository\org\apache\maven\reporting\maven-reporting-api\4.0.0\maven-reporting-api-4.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\4.0.0\maven-reporting-impl-4.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.4.2\maven-shared-utils-3.4.2.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-site-model\2.0.0\doxia-site-model-2.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-integration-tools\2.0.0\doxia-integration-tools-2.0.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.27\plexus-interpolation-1.27.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\2.0.0\doxia-site-renderer-2.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-skin-model\2.0.0\doxia-skin-model-2.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\2.0.0\doxia-module-xhtml5-2.0.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-velocity\2.2.0\plexus-velocity-2.2.0.jar:C:\Users\brunello\.m2\repository\org\apache\velocity\velocity-engine-core\2.4\velocity-engine-core-2.4.jar:C:\Users\brunello\.m2\repository\org\apache\velocity\tools\velocity-tools-generic\3.1\velocity-tools-generic-3.1.jar:C:\Users\brunello\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar:C:\Users\brunello\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\brunello\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar:C:\Users\brunello\.m2\repository\org\apache\commons\commons-digester3\3.2\commons-digester3-3.2.jar:C:\Users\brunello\.m2\repository\com\github\cliftonlabs\json-simple\3.0.2\json-simple-3.0.2.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-apt\2.0.0\doxia-module-apt-2.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-module-xdoc\2.0.0\doxia-module-xdoc-2.0.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\maven-archiver\3.6.2\maven-archiver-3.6.2.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-archiver\4.9.2\plexus-archiver-4.9.2.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-io\3.4.2\plexus-io-3.4.2.jar:C:\Users\brunello\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar:C:\Users\brunello\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar:C:\Users\brunello\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar:C:\Users\brunello\.m2\repository\org\tukaani\xz\1.9\xz-1.9.jar:C:\Users\brunello\.m2\repository\com\github\luben\zstd-jni\1.5.5-11\zstd-jni-1.5.5-11.jar:C:\Users\brunello\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar:C:\Users\brunello\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.9.0.M3\org.eclipse.sisu.plexus-0.9.0.M3.jar:C:\Users\brunello\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.9.0.M3\org.eclipse.sisu.inject-0.9.0.M3.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.1.0\plexus-component-annotations-2.1.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-core\2.0.0\doxia-core-2.0.0.jar:C:\Users\brunello\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\brunello\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar:C:\Users\brunello\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar:C:\Users\brunello\.m2\repository\org\apache\maven\doxia\doxia-sink-api\2.0.0\doxia-sink-api-2.0.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-i18n\1.1.0\plexus-i18n-1.1.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.5.1\plexus-interactivity-api-1.5.1.jar:C:\Users\brunello\.m2\repository\com\fasterxml\woodstox\woodstox-core\7.1.1\woodstox-core-7.1.1.jar:C:\Users\brunello\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.2\stax2-api-4.2.2.jar:C:\Users\brunello\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar:C:\Users\brunello\.m2\repository\org\codehaus\plexus\plexus-utils\4.0.2\plexus-utils-4.0.2.jar:C:\Users\brunello\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar:C:\Users\brunello\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar org.testng.remote.RemoteTestNG -serport 59453 -protocol json -d C:\Users\brunello\Desktop\rotina\Playwright\test-output C:\Users\brunello\AppData\Local\Temp\testng-eclipse-63893625\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-06-22 17:07:14.553
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-06-22 17:07:14.556
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:08:22.568
+!MESSAGE [Info]	[AutoModelService] Auto model cache cleared due to token update
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:08:23.481
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/ffd49729-0442-445b-ad44-083f591a142e
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:08:28.331
+!MESSAGE [Info]	[fetchChat] Request f5b110e9-f642-4e05-85dd-6fd75e8d2140 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 4805.8014000002295ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:09:20.825
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:09:21.362
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/ffd49729-0442-445b-ad44-083f591a142e
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:09:21.626
+!MESSAGE [Info]	[fetchChat] Request 61144630-124a-4ae8-a793-a7331426e458 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 756.2329999990761ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:09:21.626
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:09:28.064
+!MESSAGE [Info]	[fetchChat] Request a3fe398c-70bd-40ce-830c-eddb12ffbdcc at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 7113.678700000048ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:00.748
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:01.550
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/ffd49729-0442-445b-ad44-083f591a142e
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:01.592
+!MESSAGE [Info]	[fetchChat] Request e6e02a61-e781-4686-bc1f-604fb3d3dc38 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 797.1062000002712ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:01.592
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:02.884
+!MESSAGE [Info]	[fetchChat] Request 98d6506f-44c9-4853-ba91-e199c540e492 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 1786.8669000007212ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:05.296
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:06.325
+!MESSAGE [Info]	[agentPrompt] Reusing cached global context from first turn for conversation/turn ffa186bb-8111-44a8-9e32-c1f11e4b7bd9/ffd49729-0442-445b-ad44-083f591a142e
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:07.750
+!MESSAGE [Info]	[fetchChat] Request 029394e0-fc30-4eb1-ae57-a2905f569948 at <https://api.individual.githubcopilot.com/responses> finished with 200 status after 1884.877199999988ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:08.702
+!MESSAGE [Info]	[AutoApproveService] Extracted shell 'cmd.exe' from run_in_terminal tool description.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:08.702
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Cucumber & git add -A & git commit -m "Prepare Cucumber project: dependencies for Cucumber, Playwright and TestNG; add README"' has no matching auto approve entries
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:08.702
+!MESSAGE [Info]	[CommandLineAutoApprover] Command 'cd /d C:\Users\brunello\Desktop\rotina\Cucumber & git add -A & git commit -m "Prepare Cucumber project: dependencies for Cucumber, Playwright and TestNG; add README"' is split into sub-commands: ["cd /d C:\\Users\\brunello\\Desktop\\rotina\\Cucumber","git add -A","git commit -m \"Prepare Cucumber project: dependencies for Cucumber, Playwright and TestNG; add README\""]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-06-22 17:10:08.703
+!MESSAGE [Info]	[agentModePolicy] Auto-approval is enabled (not disabled by token envelope or group policy)
