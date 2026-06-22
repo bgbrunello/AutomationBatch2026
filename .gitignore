@@ -3,3 +3,4 @@ target/
 .idea/  
 *.iml  
 .vscode/  
+.metadata/   echo Playwright/test-output/   echo RestAssured/test-output/   echo **/target/   echo **/bin/   echo .classpath   echo .project   echo .settings/ 
