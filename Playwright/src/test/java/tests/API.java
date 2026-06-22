@@ -1,10 +1,14 @@
 package tests;
 
+import org.testng.annotations.Test;
+
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
 import com.microsoft.playwright.Playwright;
 
-public class API {
+import base.BaseTest;
+
+public class API extends BaseTest {
 
 	public static void getWeatherWithPlaywrightRequest(Playwright playwright) {
 		String url = "https://api.openweathermap.org/data/2.5/weather?q=itapevi,brazil&lang=pt_br&appid=98051a5beb882361b5133f22f363ec56";
@@ -24,6 +28,12 @@ public class API {
 				try { request.dispose(); } catch (Exception ignored) {}
 			}
 		}
+	}
+
+	@Test
+	public void runGetWeather() {
+		// uses Playwright instance from BaseTest
+		getWeatherWithPlaywrightRequest(playwright);
 	}
 
 }

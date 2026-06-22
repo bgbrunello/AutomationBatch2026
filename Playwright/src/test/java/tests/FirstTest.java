@@ -30,11 +30,7 @@ public class FirstTest extends BaseTest {
 
 	}
 
-	@Test
-	public void getWeatherWithPlaywrightRequest() {
-		// delegate to API helper
-		API.getWeatherWithPlaywrightRequest(playwright);
-	}
+	// weather request moved to tests.API
 
 	@Test
 	public void openWay2AutomationAndMemberLogin() {

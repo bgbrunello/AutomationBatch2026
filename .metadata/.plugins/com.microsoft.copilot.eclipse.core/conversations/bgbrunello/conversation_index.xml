@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><user username="bgbrunello">
     <conversations>
         <conversation conversationId="b9805a97-d6e5-4136-a3e5-815bffd793b1" creationDate="2026-06-22T13:22:38.847757300Z" lastMessageDate="2026-06-22T13:28:54.506292700Z" title="GitHub Repository Setup and Cleanup"/>
-        <conversation conversationId="ffa186bb-8111-44a8-9e32-c1f11e4b7bd9" creationDate="2026-06-22T18:38:59.628123300Z" lastMessageDate="2026-06-22T18:52:14.996055500Z" title="Integrating API Requests with Playwright"/>
+        <conversation conversationId="ffa186bb-8111-44a8-9e32-c1f11e4b7bd9" creationDate="2026-06-22T18:38:59.628123300Z" lastMessageDate="2026-06-22T18:54:16.363989200Z" title="Refactoring API Requests in Playwright Tests"/>
     </conversations>
 </user>
