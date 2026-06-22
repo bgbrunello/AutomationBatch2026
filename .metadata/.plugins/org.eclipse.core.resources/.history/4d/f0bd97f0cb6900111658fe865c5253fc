@@ -1,0 +1,8 @@
+package tests;
+
+public class TestOne {
+
+	public void test_1() {
+		
+	}
+}

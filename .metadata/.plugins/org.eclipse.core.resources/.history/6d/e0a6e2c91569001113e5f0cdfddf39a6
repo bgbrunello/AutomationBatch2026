@@ -1,0 +1,19 @@
+package tests;
+
+public class LoginTest extends BaseTest {
+
+	  @Test
+	  void test(Page page) {
+	    page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).fill("admin");
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).fill("admin123");
+	    page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Login")).click();
+	    assertThat(page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("client brand banner"))).isVisible();
+	  }
+	}
+}

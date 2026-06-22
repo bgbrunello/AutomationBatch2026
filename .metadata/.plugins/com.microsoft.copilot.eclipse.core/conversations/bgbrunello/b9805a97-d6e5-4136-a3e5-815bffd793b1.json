@@ -1,0 +1,48 @@
+{
+  "conversationId": "b9805a97-d6e5-4136-a3e5-815bffd793b1",
+  "title": "push this project to github on https://github.com/...",
+  "requesterUsername": "bgbrunello",
+  "responderUsername": "GitHub Copilot",
+  "turns": [
+    {
+      "message": {
+        "text": "push this project to github on https://github.com/bgbrunello/AutomationBatch2026"
+      },
+      "currentDocument": {
+        "uri": "/Playwright/src/test/java/tests/FirstTest.java"
+      },
+      "references": [],
+      "ignoredSkills": [],
+      "userLanguage": "en",
+      "source": "panel",
+      "model": "GPT-5 mini",
+      "chatMode": "Agent",
+      "customChatModeId": "Agent",
+      "needToolCallConfirmation": true,
+      "turnId": "adfb3254-8ca4-4b41-9ab0-8802b8771d1f",
+      "role": "user",
+      "timestamp": "2026-06-22T13:22:38.883757800Z"
+    },
+    {
+      "reply": {
+        "annotations": [],
+        "references": [],
+        "hideText": false,
+        "notifications": [],
+        "followups": [],
+        "errorMessages": [],
+        "editAgentRounds": [],
+        "panelMessages": [],
+        "steps": [],
+        "agentMessages": [],
+        "data": {},
+        "billingMultiplier": 0.0
+      },
+      "turnId": "adfb3254-8ca4-4b41-9ab0-8802b8771d1f",
+      "role": "copilot",
+      "timestamp": "2026-06-22T13:22:39.359186600Z"
+    }
+  ],
+  "creationDate": "2026-06-22T13:22:38.847757300Z",
+  "lastMessageDate": "2026-06-22T13:22:39.358183700Z"
+}
