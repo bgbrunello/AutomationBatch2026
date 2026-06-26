@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-26T10:01:25 BRT" name="Default suite" finished-at="2026-06-26T10:01:39 BRT" duration-ms="13474">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5b03b9fe]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-06-26T10:01:25 BRT" name="Default test" finished-at="2026-06-26T10:01:39 BRT" duration-ms="13474">
+      <class name="runner.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@5b03b9fe]" started-at="2026-06-26T10:01:25 BRT" name="setUpClass" finished-at="2026-06-26T10:01:26 BRT" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@31e72cbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5b03b9fe]" started-at="2026-06-26T10:01:26 BRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-26T10:01:39 BRT" duration-ms="13096" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login com sucesso"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login G13Store"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Mensagem esperada não encontrada no body: Acesse sua conta Campo Obrigatório Esqueceu sua senha? Recuperar ENTRAR OU PRIMEIRO ACESSO? CADASTRE-SE COMPROU E NÃO POSSUI SENHA? CADASTRE-SE Nosso horário de atendimento para suporte ou dúvidas é de Segunda à Sexta das 09h às 16h. Pedidos realizados após às 16h serão processados no seguinte dia útil. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Mensagem esperada não encontrada no body: Acesse sua conta Campo Obrigatório Esqueceu sua senha? Recuperar ENTRAR OU PRIMEIRO ACESSO? CADASTRE-SE COMPROU E NÃO POSSUI SENHA? CADASTRE-SE Nosso horário de atendimento para suporte ou dúvidas é de Segunda à Sexta das 09h às 16h. Pedidos realizados após às 16h serão processados no seguinte dia útil. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at steps.LoginSteps.validaMensagem(LoginSteps.java:105)
+at ✽.deve exibir "Olá Bruno"(file:///C:/Users/brunello/Desktop/rotina/Cucumber/src/test/resources/features/Login.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@5b03b9fe]" started-at="2026-06-26T10:01:39 BRT" name="tearDownClass" finished-at="2026-06-26T10:01:39 BRT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
